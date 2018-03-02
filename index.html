@@ -7,199 +7,202 @@ BILLAUD Pierre (11709442)
 
 <html lang="fr">
 
-  <head>
+	<head>
+		<title>Parkings Lyon 1</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!--
+		<link href="css/style.css" rel="stylesheet">
 
-    <title>Park-auto :</title>
-
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!--<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/DecoPerso.css" rel="stylesheet">
-    <script src="lib/jquery-2.2.3.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>-->
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-  </head>
-  <body>
-<header> 
-		<h1 style="text-align:center;">Gestionnaire des parkings du campus de Lyon 1</h1>
-</header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ajouter un parking</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Liste des parkings</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" id ="Search" type="Rechercher" placeholder="Rechercher" aria-label="Rechercher">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
-    </form>
-  </div>
-</nav>
-
-	<br/>
-
-
-
-
-<p style="text-align :center;">
-	<button type="button" data-toggle="collapse" data-target="#collapseTable">Afficher le tableau </button>
-</p>
-
-
-
-
-<section class="col-lg-12">
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/DecoPerso.css" rel="stylesheet">
+		<script src="lib/jquery-2.2.3.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>-->
 		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	
+	</head>
 
-		<table id="collapseTable" class="table">
+
+	<body class="container-fluid">
+		<header> 
+				<h1 style="text-align:center;">Gestionnaire des parkings du campus de Lyon 1</h1>
+		</header>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+			
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Accueil
+							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Ajouter un parking</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#tableauParkings">Liste des parkings</a>
+					</li>
+				</ul>
+				
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" id ="Search" type="Rechercher" placeholder="Rechercher" aria-label="Rechercher">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+				</form>
+				
+			</div>
+
+		</nav>
+
+
+
+		<br/>
+
+
+		
+		<div class="col row-12">
+			<p style="text-align: center;">
+				<br>
+				<button type="button" data-target="#tableauParkings" data-toggle="collapse">
+					Afficher la liste des parkings
+				</button>
+				<br>
+			</p>
+			<div id="tableau" class="table">
+				<table id="tableauParkings">
+
 			
 				<thead class="thead-dark">
-				<tr  >
-					<th>Nom du parking :	</th>
-					<th>Type de véhicules :	</th>
-					<th>Coordonnées GPS :	</th>
-					<th>Nombre de places :	</th>
-					<th>Email du responsable :	</th>
-					<th>Système de comptage :</th>
-					<th>Modifier </th>
-					<th>Supprimer </th>
-				</tr>
+					<th>Nom du parking </th>
+					<th>Type de véhicules </th>
+					<th>Coordonnées GPS </th>
+					<th>Nombre de places </th>
+					<th>Email du responsable </th>
+					<th>Système de comptage </th>
+					<th> </th>
+					<th> </th>
 				</thead>
+				
 				<tbody id="bodyTable">
-				<tr id="child-0" >
-					<th>Nautibus</th>
-					<td>Voiture</td>
-					<td>30°Nord/40°Sud</td>
-					<td>100 </td>
-					<td>LeResponsableNautibus@univ-lyon1.fr</td>
-					<td>Plaque de pression</td>
-					<td><button type="button" class="btn btn-primary" value="0"  onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="0" onclick="remove(this.value)">Supprimer</button></td>
-				</tr>
-				<tr id="child-1">
-					<th>Ariane</th>
-					<td>Voiture</td>
-					<td>60°Nord/50°Sud</td>
-					<td>150 </td>
-					<td>LeResponsableAriane@univ-lyon1.fr</td>
-					<td>Plaque de pression</td>
-					<td><button type="button" class="btn btn-primary" value="1" onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="1" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
-				<tr id="child-2">
-					<th>STAPS</th>
-					<td>Vélo</td>
-					<td>30°Nord/60°Sud</td>
-					<td>90 </td>
-					<td>LeResponsableSTAPS@univ-lyon1.fr</td>
-					<td>Capteur de précision</td>
-					<td><button type="button" class="btn btn-primary"   value="2" onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="2" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
-				<tr id="child-3">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary"  value="3" onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="3" onclick="remove(this.value)">Supprimer</button></td>
-				</tr>
-				<tr id="child-4">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary"  value="4" onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="4" onclick="remove(this.value)">Supprimer</button></td>
-				</tr>
-				<tr id="child-5">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary"  value="5" onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="5" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
-				<tr id="child-6">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary" value="6" onclick="modify(this.value)">Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="6" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
-				<tr id="child-7">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary" value="7"  onclick="modify(this.value)" >Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="7" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
-				<tr id="child-8">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary" value="8"  onclick="modify(this.value)" >Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="8" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
-				<tr id="child-9">
-					<th>Random</th>
-					<td>Vélo</td>
-					<td>50/50/50</td>
-					<td>90 </td>
-					<td>LeResponsableRandom@univ-lyon1.fr</td>
-					<td>Capteur / Plaque</td>
-					<td><button type="button" class="btn btn-primary" value="9" onclick="modify(this.value)" >Modifier</button></td>
-					<td><button type="button" class="btn btn-warning" value="9" onclick="remove(this.value)" >Supprimer</button></td>
-				</tr>
+					<tr id="child-0" >
+						<th>Nautibus</th>
+						<td>Voiture</td>
+						<td>30°Nord/40°Sud</td>
+						<td>100 </td>
+						<td>LeResponsableNautibus@univ-lyon1.fr</td>
+						<td>Plaque de pression</td>
+						<td><button type="button" class="btn btn-primary" value="0"  onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="0" onclick="remove(this.value)">Supprimer</button></td>
+					</tr>
+					<tr id="child-1">
+						<th>Ariane</th>
+						<td>Voiture</td>
+						<td>60°Nord/50°Sud</td>
+						<td>150 </td>
+						<td>LeResponsableAriane@univ-lyon1.fr</td>
+						<td>Plaque de pression</td>
+						<td><button type="button" class="btn btn-primary" value="1" onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="1" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
+					<tr id="child-2">
+						<th>STAPS</th>
+						<td>Vélo</td>
+						<td>30°Nord/60°Sud</td>
+						<td>90 </td>
+						<td>LeResponsableSTAPS@univ-lyon1.fr</td>
+						<td>Capteur de précision</td>
+						<td><button type="button" class="btn btn-primary"   value="2" onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="2" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
+					<tr id="child-3">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary"  value="3" onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="3" onclick="remove(this.value)">Supprimer</button></td>
+					</tr>
+					<tr id="child-4">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary"  value="4" onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="4" onclick="remove(this.value)">Supprimer</button></td>
+					</tr>
+					<tr id="child-5">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary"  value="5" onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="5" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
+					<tr id="child-6">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary" value="6" onclick="modify(this.value)">Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="6" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
+					<tr id="child-7">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary" value="7"  onclick="modify(this.value)" >Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="7" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
+					<tr id="child-8">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary" value="8"  onclick="modify(this.value)" >Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="8" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
+					<tr id="child-9">
+						<th>Random</th>
+						<td>Vélo</td>
+						<td>50/50/50</td>
+						<td>90 </td>
+						<td>LeResponsableRandom@univ-lyon1.fr</td>
+						<td>Capteur / Plaque</td>
+						<td><button type="button" class="btn btn-primary" value="9" onclick="modify(this.value)" >Modifier</button></td>
+						<td><button type="button" class="btn btn-warning" value="9" onclick="remove(this.value)" >Supprimer</button></td>
+					</tr>
 				</tbody>
-			</table>
-			
-			
-		
-</section>
+				</table>
+			</div>
+		</div>
 		
 			
 						
 		
-	<section class="col-lg-12">
+		<section class="col-lg-12">
+		
 			<form class="needs-validation"   autocomplete="on" novalidate >
 				<div class="form-row " >
 					<div class="col-md-4 mb-3" >
@@ -218,72 +221,66 @@ BILLAUD Pierre (11709442)
 					</div>
 				</div>
 				<div class="form-row align-items-center" >
-						<div class="col-md-4 mb-3">
-							<label class="mr-sm-2" for="inlineFormCustomSelect">Type de transport</label>
-							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required >
-							<option value="Voiture">Voiture</option>
-							<option value="Vélo">Vélo</option>
-							</select>
-							<div class="valid-feedback">
-							Valide
-							</div>
-						</div>
+					<div class="col-md-4 mb-3">
+						<label class="mr-sm-2" for="inlineFormCustomSelect">Type de transport</label>
+						<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required >
+						<option value="Voiture">Voiture</option>
+						<option value="Vélo">Vélo</option>
+						</select>
+						<div class="valid-feedback">Valide</div>
+					</div>
+					
+					<div class="col-md-2 mb-3">
+						<label for="validationCustom03">Latitude </label>
 						
-						<div class="col-md-2 mb-3">
-							<label for="validationCustom03">Latitude </label>
-							
-							<input type="number" name="quantity1" min="1" max="50" class="form-control" id="validationCustom03"  value="45" required>
-							<div class="valid-feedback">
-							Les coordonnées sont valides
-							</div>
-						</div>
-							<div class="col-md-2 mb-3">
-							<label for="validationCustom05"> Longitude </label>
-							
-								<input type="number" name="quantity2" min="1" max="50" class="form-control" id="validationCustom05"  value="45" required>
-								<div class="valid-feedback">
-							Les coordonnées sont valides
-								</div>
-							</div>
+						<input type="number" name="quantity1" min="1" max="50" class="form-control" id="validationCustom03"  value="45" required>
+						<div class="valid-feedback">Les coordonnées sont valides</div>
+					</div>
+					
+					<div class="col-md-2 mb-3">
+						<label for="validationCustom05"> Longitude </label>
+						
+						<input type="number" name="quantity2" min="1" max="50" class="form-control" id="validationCustom05"  value="45" required>
+						<div class="valid-feedback">Les coordonnées sont valides</div>
+					</div>
 				</div>
-					<div class="form-row align-items-center">
-						<div class="col-sm-3 my-1">
+				
+				<div class="form-row align-items-center">
+					<div class="col-sm-3 my-1">
 						<label for="inlineFormInputName">Adresse du responsable</label>
 						<input type="text" class="form-control" id="inlineFormInputName" placeholder="Responsable" required>
-						<div class="invalid-feedback">
-							Entrez un nom valide
-							</div>
-						</div>
-						<div class="col-sm-4 my-1">
+						<div class="invalid-feedback">Entrez un nom valide</div>
+					</div>
+					<div class="col-sm-4 my-1">
 						<label for="inlineFormInputName">Messagerie </label>
 						<div class="input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroupPrepend">@</span>
 							</div>
 							<input type="text" class="form-control" id="validationCustomUsername" placeholder="Messagerie" aria-describedby="inputGroupPrepend" required>
-							<div class="invalid-feedback">
-							Entrez une adresse valide
-							</div>
+							<div class="invalid-feedback">Entrez une adresse valide</div>
 						</div>
 					</div>
-					</div>
+				</div>
 				
 				<div class="form-row">
 					<div class="col-md-3 mb-3">
 						<label for="validationCustom04">Système de comptage</label>
 						<input type="text" class="form-control" id="validationCustom04" placeholder="Capteur" required>
-						<div class="invalid-feedback">
-						Invalide
-						</div>
+						<div class="invalid-feedback">Invalide</div>
 					</div>
 				</div>
+				
 				<button class="btn btn-primary" type="button" onclick="myFunction()" >Envoyer le formulaire</button>
+			
 			</form>
-	</section>	
+			
+		</section>	
 
+	
+	
+	
 <script>
-
-
 
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -406,17 +403,16 @@ $(document).ready(function () {
 </script>
 
 
-      <footer class="row">
 
 
-      </footer>
+		<footer class="row">
+			<!--
+			Page web créée par Pierre Billaud et To Uyen Nguyen Doan
+			<br>dans le cadre du cours d'IHM à l'UCBL (L2 Informatique 2017-2018)
+			-->
+		</footer>
 
-  
 
-  </body>
-
-</html>
-
- 
+	</body>
 
 </html>
