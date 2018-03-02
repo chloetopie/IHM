@@ -38,7 +38,7 @@ BILLAUD Pierre (11709442)
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <div class="collapse navbar-collapse float-sm-left " id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -51,8 +51,8 @@ BILLAUD Pierre (11709442)
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" id ="Search" type="Rechercher" placeholder="Rechercher" aria-label="Rechercher">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+      <input class="form-control mr-sm-2" id="string" name="string" type="text" value="" placeholder="Rechercher" aria-label="Rechercher" onkeyup="filter(this, 'collapseTable')">
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="" onclick="searchString()" >Recherche</button>-->
     </form>
   </div>
 </nav>
@@ -62,9 +62,10 @@ BILLAUD Pierre (11709442)
 
 
 
-<p style="text-align :center;">
-	<button type="button" data-toggle="collapse" data-target="#collapseTable">Afficher le tableau </button>
-</p>
+<p style="text-align :center;"> <button type="button" data-toggle="collapse" data-target="#collapseTable"> Afficher le tableau </button> </p>
+			
+			
+
 
 
 
@@ -74,7 +75,7 @@ BILLAUD Pierre (11709442)
 
 	
 
-		<table id="collapseTable" class="table">
+		<table id="collapseTable" class="table ">
 			
 				<thead class="thead-dark">
 				<tr  >
@@ -195,14 +196,15 @@ BILLAUD Pierre (11709442)
 			
 		
 </section>
-		
-			
+			</br>
+			</br>
+			<h1 style="text-align: center;" >Formulaire à remplir pour ajouter un nouveau parking ou modifier un parking existant : </h1>
 						
 		
 	<section class="col-lg-12">
-			<form class="needs-validation"   autocomplete="on" novalidate >
+			<form class="needs-validation"   autocomplete="on"  novalidate >
 				<div class="form-row " >
-					<div class="col-md-4 mb-3" >
+					<div class="col-md-4 mb-3 offset-2" >
 						<label for="validationCustom01">Nom du Parking </label>
 						<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Nautibus" autocomplete="section-blue name" required>
 						<div class="valid-feedback">
@@ -218,7 +220,7 @@ BILLAUD Pierre (11709442)
 					</div>
 				</div>
 				<div class="form-row align-items-center" >
-						<div class="col-md-4 mb-3">
+						<div class="col-md-4 mb-3 offset-2">
 							<label class="mr-sm-2" for="inlineFormCustomSelect">Type de transport</label>
 							<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required >
 							<option value="Voiture">Voiture</option>
@@ -247,14 +249,14 @@ BILLAUD Pierre (11709442)
 							</div>
 				</div>
 					<div class="form-row align-items-center">
-						<div class="col-sm-3 my-1">
+						<div class="col-sm-3 my-1 offset-3">
 						<label for="inlineFormInputName">Adresse du responsable</label>
 						<input type="text" class="form-control" id="inlineFormInputName" placeholder="Responsable" required>
 						<div class="invalid-feedback">
 							Entrez un nom valide
 							</div>
 						</div>
-						<div class="col-sm-4 my-1">
+						<div class="col-sm-3 my-1">
 						<label for="inlineFormInputName">Messagerie </label>
 						<div class="input-group">
 							<div class="input-group-prepend">
@@ -268,8 +270,8 @@ BILLAUD Pierre (11709442)
 					</div>
 					</div>
 				
-				<div class="form-row">
-					<div class="col-md-3 mb-3">
+				<div class="form-row ">
+					<div class="col-md-2 mb-3 offset-5">
 						<label for="validationCustom04">Système de comptage</label>
 						<input type="text" class="form-control" id="validationCustom04" placeholder="Capteur" required>
 						<div class="invalid-feedback">
@@ -277,17 +279,19 @@ BILLAUD Pierre (11709442)
 						</div>
 					</div>
 				</div>
-				<button class="btn btn-primary" type="button" onclick="myFunction()" >Envoyer le formulaire</button>
+				<div style="text-align:center;">
+				<button class="btn btn-primary" type="" onclick="myFunction()" >Envoyer le formulaire</button>
+				</div>
 			</form>
 	</section>	
-
+</br>
 <script>
 
 
 
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
+(function() { // Function COLLAPSE
   'use strict';
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -306,9 +310,9 @@ BILLAUD Pierre (11709442)
 })();
 
 
-function myFunction() {
+function myFunction() { // fonction qui créée un nouveau parking dans le tableau
 
-//Variable qui s'incrémente quand on ajoute un parking : sert aux boutons de suppressions de parkings et de modification
+if (document.getElementById("inlineFormInputName").value != "" && document.getElementById("validationCustomUsername").value !="" && document.getElementById("validationCustom04").value!=""  )  {
 var compteur =document.getElementById("bodyTable").childNodes.length; ;
 
 	var x = document.createElement("TR"); x.setAttribute("id","child-"+compteur);
@@ -361,6 +365,8 @@ var compteur =document.getElementById("bodyTable").childNodes.length; ;
 	x.appendChild(z5);   x.appendChild(z6);   
 	
 	alert("Une nouvelle ligne a été ajoutée avec succès au tableau.");
+	}
+	else { alert("N'oubliez pas de renseigner tous les champs."); }
 }
 
 function remove (x)
@@ -370,8 +376,9 @@ var child = document.getElementById("child-"+x);
  child.parentNode.removeChild(child);
 }
 
-function modify(k)
+function modify(k)//modifie chaque ligne selon ce qui est dans le formulaire
 {
+if (document.getElementById("inlineFormInputName").value != "" && document.getElementById("validationCustomUsername").value !="" && document.getElementById("validationCustom04").value!=""  )  {
 	var c = document.getElementById("child-"+k).childNodes;
 	c[1].innerHTML = document.getElementById("validationCustom01").value;
 	c[3].innerHTML = document.getElementById("inlineFormCustomSelect").value;
@@ -379,30 +386,29 @@ function modify(k)
 	c[7].innerHTML = document.getElementById("validationCustom02").value;
 	c[9].innerHTML = document.getElementById("inlineFormInputName").value + "@" + document.getElementById("validationCustomUsername").value;
 	c[11].innerHTML = document.getElementById("validationCustom04").value;
+	}
+	else { alert("N'oubliez pas de renseigner tous les champs du formulaire."); }
 }	
 
-$(document).ready(function () {
-    "use strict";
-    // Click on td item will change input text value
-    $('td').click(function () {
-        $('#Search').val($(this).html());
-    });
- 
-    // Type some text into input will hide some composants !
-    $('#Search').change(function () {
-        var input_content = $.trim($(this).val());
-        if (!input_content) {
-            $('tr>td').show();
-        } else {
-            $('ul>li').each(function(){
-        if($(this).html().toLowerCase().search(new RegExp(input_content.toLowerCase())) !== -1)
-                $(this).show();
-        else
-                $(this).hide();
-});
-        }
-    });
-});
+function filter (phrase, _id){ //Recherche dans le tableau html
+    var words = phrase.value.toLowerCase().split(" ");
+    var table = document.getElementById(_id);
+    var ele;
+    for (var r = 1; r < table.rows.length; r++){
+        ele = table.rows[r].innerHTML.replace(/<[^>]+>/g,"");
+            var displayStyle = 'none';
+            for (var i = 0; i < words.length; i++) {
+            if (ele.toLowerCase().indexOf(words[i])>=0)
+            displayStyle = '';
+            else {
+            displayStyle = 'none';
+            break;
+            }
+            }
+        table.rows[r].style.display = displayStyle;
+    }
+}
+
 </script>
 
 
